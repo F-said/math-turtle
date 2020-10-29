@@ -16,8 +16,8 @@ def main():
 
     drawer_turtle = turtle.Turtle()
     screen = turtle.Screen()
+    screen.tracer(0)
     drawer_turtle.up()
-    drawer_turtle.speed(0)
     pensize = 2
 
     drawer_turtle.goto(a)
@@ -35,18 +35,19 @@ def main():
         x_state = drawer_turtle.xcor()
         y_state = drawer_turtle.ycor()
 
-        if value is 1 or value is 2:
+        if value == 1 or value == 2:
             go_coor_A = (((x_state + 0)/2), ((y_state + size)/2))
             drawer_turtle.goto(go_coor_A)
             drawer_turtle.dot(pensize, "blue")
-        elif value is 3 or value is 4:
+        elif value == 3 or value == 4:
             go_coor_B = (((x_state + (-size))/2), ((y_state + 0)/2))
             drawer_turtle.goto(go_coor_B)
             drawer_turtle.dot(pensize, "blue")
-        elif value is 5 or value is 6:
+        elif value == 5 or value == 6:
             go_coor_C = (((x_state + size)/2), ((y_state + 0)/2))
             drawer_turtle.goto(go_coor_C)
             drawer_turtle.dot(pensize, "blue")
+        screen.update()
 
     drawer_turtle.hideturtle()
 
