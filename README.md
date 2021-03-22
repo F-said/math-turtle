@@ -1,3 +1,6 @@
+# Math Turtle
+A Python repo that uses turtle to draw a variety of mathematical patterns. No [utility](https://www.youtube.com/watch?v=xopM9BFjcNo) involved!
+
 # Sierpinski_Triangle
 Create's the fractal "Sierpinski Triangle" 
 
